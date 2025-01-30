@@ -47,11 +47,10 @@ def calculate_uncertainties(T: list, n: list, n0: float, a: float, b: float) -> 
     return sigma_n0, sigma_a, sigma_b
 
 
-# Przykładowe użycie
+
 if __name__ == "__main__":
-    # Wklej dane tutaj
-    T = [25.0,  29.6,  34.1,  38.9,  42.8,  47.7,  52.1,  58.9,  62.5]  # Przykładowe wartości T
-    n = [1.639, 1.636, 1.634, 1.633, 1.630, 1.628, 1.626, 1.623, 1.621]  # Przykładowe wartości n
+    T = [25.0,  29.6,  34.1,  38.9,  42.8,  47.7,  52.1,  58.9,  62.5]
+    n = [1.639, 1.636, 1.634, 1.633, 1.630, 1.628, 1.626, 1.623, 1.621]
 
     if len(T) != len(n):
         print("Błąd: listy T i n muszą mieć taką samą długość.")
